@@ -1,0 +1,50 @@
+//
+//  PykLocal-Prefix.pch
+//  PykLocal
+//
+//  Created by Mihin  Patel on 04/07/16.
+//  Copyright © 2016 Mihin  Patel. All rights reserved.
+//
+
+#ifndef PykLocal_Prefix_pch
+#define PykLocal_Prefix_pch
+
+#import "AppDelegate.h"
+#import "WebServiceUrl.h"
+#import "Common.h"
+#import "SearchViewController.h"
+#import "CartViewController.h"
+#import "ComingSoonViewController.h"
+#import "WishList.h"
+#import "BarcodeScannerViewController.h"
+#import "WishlistViewController.h"
+
+#import "JSON.h"
+#import "MFSideMenu.h"
+#import "UIBarButtonItem+Badge.h"
+#import "TSMessage.h"
+#import "TSMessageView.h"
+#import "Reachability.h"
+#import <SVProgressHUD.h>
+#import "AFNetworking.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <sqlite3.h>
+
+//#define viewWidth self.view.frame.size.width
+//#define viewHeight self.view.frame.size.height
+
+//#define RGB ([UIColor colorWithRed:153.0/255.0 green:137.0/255.0 blue:138.0/255.0 alpha:1.0])
+#define RGB ([UIColor colorWithRed:205.0/255.0 green:0.0/255.0 blue:0.0/255.0 alpha:1.0])
+
+#define IS_IOS8 (([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)?YES:NO)
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v) ([[[UIDevice currentDevice] systemVersion] compare:(v) options:NSNumericSearch] != NSOrderedAscending)
+
+#define WS_GoogleSignIn         @"https://www.googleapis.com/plus/v1/people/me?access_token="
+
+#define kGoogleClientId @"371132069556-eccbmg010no6h2gf4dc8di9cr5sm7aoi.apps.googleusercontent.com"
+
+#define GOOGLE_SCHEME @"com.googleusercontent.apps.371132069556-eccbmg010no6h2gf4dc8di9cr5sm7aoi"
+
+#define FACEBOOK_SCHEME  @"fb1021569267893788"
+
+#endif /* PykLocal_Prefix_pch */
